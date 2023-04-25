@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        h1{
+            color:blue;
+        }
+    </style>
+    <script>
+        var a,b,c,r=0;
+        a=parseInt(prompt("Enter 1st number 😀"));
+        b=parseInt(prompt("Enter 2nd number 😀"));
+        c=prompt("Enter operator + - * / % // to perform 😎");
+        switch(c){
+            case '+':
+                r=a+b;
+                document.writeln("<h1>The addition of "+a+","+b+"is :"+r+"</h1>");
+                break;
+            case '-':
+                r=a-b;
+                document.writeln("<h1>The subraction of "+a+","+b+"is :"+r+"</h1>");
+                break;
+            case '*':
+                r=a*b;
+                document.writeln("<h1>The Multiplication of "+a+","+b+"is :"+r+"</h1>");
+                break;
+            case '/':
+                r=a/b;
+                document.writeln("<h1>The division of "+a+","+b+"is :"+r+"</h1>");
+                break;
+            case '%':
+                r=a%b;
+                document.writeln("<h1>The remainder of "+a+","+b+"is :"+r+"</h1>");
+                break;
+            case '//':
+                r=Math.floor(a/b);
+                document.writeln("<h1>The floor division of "+a+","+b+"is :"+r+"</h1>");
+                break;
+        }
+    </script>
+</head>
+<body bgcolor="green">
+    
+</body>
+</html>
