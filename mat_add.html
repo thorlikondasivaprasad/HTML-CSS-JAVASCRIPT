@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function addmatrix(m1,m2){
+            var mat= [[],[],[]];
+            for(let i=0;i<m1.length;i++){
+                for(let j=0;j<m1[i].length;j++){
+                    mat[i][j]=m1[i][j]+m2[i][j];
+                }
+            }
+            document.writeln("The resultant matrix is :"+"<br>");
+            for(let i=0;i<m1.length;i++){
+                for(let j=0;j<m1[i].length;j++){
+                    document.write(mat[i][j]+" ");
+                }
+                document.write("<br>");
+            }
+    }
+        let m1=[[1,2,3],[2,3,4],[3,4,5]];
+        let m2=[[1,2,3],[2,3,4],[3,4,5]];
+        addmatrix(m1,m2);
+
+    </script>
+</body>
+</html>

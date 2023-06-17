@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function multiply(mat1, mat2, res)
+        {
+            let i, j, k;
+            for (i = 0; i < N; i++) 
+            {
+                for (j = 0; j < N; j++)
+                {
+                res[i][j] = 0;
+                for (k = 0; k < N; k++){
+                    res[i][j] += mat1[i][k] * mat2[k][j];
+                }
+                }
+            }
+        }
+    let m1=[[1,2,3],[2,3,4],[3,4,5]];
+    let m2=[[1,2,3],[2,3,4],[3,4,5]];
+    let N=3;
+    let res =[[],[],[]];
+    multiply(m1,m2,res);
+    document.write("Result matrix is <br>");
+    for (i = 0; i < N; i++) {
+        for (j = 0; j < N; j++)
+            document.write(res[i][j] + "  ");
+        document.write("<br>");
+    }
+    </script>
+</body>
+</html>
