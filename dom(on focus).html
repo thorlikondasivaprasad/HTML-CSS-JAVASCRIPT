@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h1>DOM events</h1>
+        <h2>fake devil</h2>
+        <p>i am bad</p>
+        <form id="myform">
+            <input type="text" id="myinput">
+        </form>
+        <script>
+            let x=document.getElementById("myform");
+            x.addEventListener("focusin",myfocus);
+            x.addEventListener("focusout",myblur);
+            function myfocus()
+            {
+                document.getElementById("myinput").style.backgroundColor="yellow";
+            }
+            function myblur()
+            {
+                document.getElementById("myinput").style.backgroundColor="";
+            }
+        </script>
+    </body>
+    </html>
+            
