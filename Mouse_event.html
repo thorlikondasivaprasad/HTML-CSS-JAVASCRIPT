@@ -1,0 +1,45 @@
+<html>
+<head>
+    <style>
+        div {
+            width:200px;
+            height:100px;
+            border:2px;
+        }
+    </style>
+</head>
+    <body>
+        <h1>Mouse Events</h1>
+        <h2>onmusedown & onmouseeup events</h2>
+        <p id="p" onmousedown="mousedown()" onmouseup="mouseup()">events</p>
+        <h2>onmousemove events</h2>
+        <div onmousemove="myfunction(event)"></div>
+        <button onclick="myfun()">click me</button>
+        <p id="demo"></p>
+        <script>
+            function mousedown()
+            {
+                document.getElementById("p").style.color="red";
+            }
+            function mouseup()
+            {
+                document.getElementById("p").style.color="cyan";
+            }
+            function myfunction(e)
+            {
+                let x=e.clientX;
+                let y=e.clientY;
+                document.getElementById("demo").innerHTML=x+" "+y;
+            }
+            // function clearcoor()
+            // {
+            //     document.writeln("");
+            // }
+            function myfun()
+            {
+                document.writeln("Hello!");
+            }
+        </script>
+
+    </body>
+</html>
